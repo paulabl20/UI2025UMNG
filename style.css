@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{
+    padding-inline: 5.5em;
+    font-family:"DM  Sans",sans-serif;
+}
+li{
+    list-style: none;
+}
+button{
+    border: none;
+}
+.h1{
+    font-size: 2.618em;
+}
+.h2{
+    font-size: 1.618em;
+}
+.p{
+    font-size: 1rem;
+}
+#menu{
+border: solid rebeccapurple 2px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#menu ul{
+    border: solid rebeccapurple 2px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    background-color: darkorchid;
+    width: 100%;
+    padding: 1em;
+    color:white;
+    border-radius: 2px 0 0 0;
+}
+.btn1{
+    background-color: #664efc;
+    width: 50%;
+    padding: 1em;
+    color:white;
+    border-radius: 2px 0 0 0;
+}
+#banner{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: solid green 2px;
+}
+.izq-banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    gap: 1em;
+}
+.izq-banner h1{
+    width: 100%;
+    font-size: 2.618em;
+    font-style: normal;
+    font-weight: bold;
+    border: solid red 2px;
+}
+.izq-banner{
+    line-height: 1.5;
+}
+
+.der-banner img{
+    width: 100%;
+}
+.der-banner{
+    width: 100%;
+}
+/*borrar despues de aplicar estilos*/
+img{
+    width: 20%;
+}
+#sec1{
+    width: 100%;
+    height: 50vh;
+    gap: 2em;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: solid rgb(68, 201, 108) 2px;
+}
+.izq-sec1{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 70%;
+    width: 100%;
+}
+.izq-sec1 p{
+   line-height: 1.5;
+}
+.der-sec1{
+    flex: 30%;
+    width: 100%;
+}
+.der-sec1 img{
+    width: 100%;
+}
+#sec2{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    border: solid rgb(167, 92, 169) 2px;
+}
+.der-sec2{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 70%;
+    width: 100%;
+}
+.der-sec2 p{
+   line-height: 1.5;
+}
+.izq-sec2{
+    flex: 30%;
+    width: 100%;
+}
+.der-sec2{
+    width: 100%;
+}
+.izq-sec2 img{
+    width: 100%;
+}
+
+#pie{
+display: flex;
+gap: 8em;
+padding: 3em 0 3em 0;
+}
+.izq-pie{
+flex: 30%;
+}
+.der-pie{
+flex: 70%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.der-pie article h2,p{
+padding-bottom: 1em;
+}
+/*CELULAR*/
+@media only screen and (min-width: 300px) and (max-width:768px){
+body{
+padding-inline: 1em;
+}
+#banner, #sec1, #sec2{
+flex-direction: column-reverse;
+}
+#pie{
+flex-direction: column;
+gap: 2em;
+}
+.der-pie{
+grid-template-columns: 1fr 1fr;
+}
+}
+/*Tablet*/
+@media only screen and (min-width: 769px) and (max-width:1200px){
+body{
+padding-inline: 1em;
+}
+#banner{
+flex-direction: column-reverse;
+}
+.der-pie{
+grid-template-columns: 1fr 1fr;
+}
+}
